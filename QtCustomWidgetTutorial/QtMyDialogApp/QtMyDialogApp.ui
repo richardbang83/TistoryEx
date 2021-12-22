@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtMyDialogAppClass</class>
+ <widget class="QDialog" name="QtMyDialogAppClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtMyDialogApp</string>
+  </property>
+  <widget class="FirstUIWidget" name="uiFirstUIWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>10</y>
+     <width>201</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="SecondUIWidget" name="uiSecondUIWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>271</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="ThirdUIWidget" name="uiThirdUIWidget">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>150</y>
+     <width>241</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QtSingleUI" name="uiQtSingleUI">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>150</width>
+     <height>100</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QtSingleUI</class>
+   <extends>QWidget</extends>
+   <header>QtSingleUI.h</header>
+  </customwidget>
+  <customwidget>
+   <class>FirstUIWidget</class>
+   <extends>QWidget</extends>
+   <header>FirstUIWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SecondUIWidget</class>
+   <extends>QWidget</extends>
+   <header>SecondUIWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ThirdUIWidget</class>
+   <extends>QWidget</extends>
+   <header>ThirdUIWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="QtMyDialogApp.qrc"/>
+ </resources>
+ <connections/>
+</ui>
